@@ -3,11 +3,13 @@
     <div class="frame__title-wrap">
       <h1 class="frame__title">Wave Motion Effect</h1>
       <div class="frame__links">
-        <a href="https://tympanus.net/Development/BackgroundScaleHoverEffect/"
+        <a href="https://r3f-infinite-circular-gallery-codrops.vercel.app/"
           >Previous demo</a
         >
         <a href="https://tympanus.net/codrops/?p=48418">Article</a>
-        <a href="https://github.com/marioecg/codrops-wave-motion">GitHub</a>
+        <a href="https://github.com/MathisHumbert/vue-wave-motion-effect"
+          >GitHub</a
+        >
       </div>
     </div>
     <div class="frame__demos">
@@ -50,8 +52,6 @@
   font-size: 1rem;
   margin: 0 0 1rem;
   font-weight: normal;
-
-  /* margin: 0; */
 }
 
 .frame__tagline {
@@ -75,6 +75,7 @@
 
 .frame a {
   pointer-events: auto;
+  white-space: nowrap;
 }
 
 .frame__links a:not(:last-child),
@@ -85,5 +86,21 @@
 .frame__demo--current,
 .frame__demo--current:hover {
   color: var(--color-text);
+}
+
+@media screen and (max-width: 768px) {
+  .frame__demo {
+    margin-bottom: 0;
+    grid-area: demos;
+    justify-self: center;
+  }
+
+  .frame__links {
+    padding: 0;
+    grid-column: -1 / 1;
+    grid-area: demos;
+    gap: 0;
+    text-decoration: none;
+  }
 }
 </style>

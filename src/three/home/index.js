@@ -80,11 +80,13 @@ export default class Home {
    * Events.
    */
   onResize({ screen, viewport }) {
-    this.medias.forEach((media) => {
-      if (media && media.onResize) {
-        media.onResize({ screen, viewport });
-      }
-    });
+    if (this.medias) {
+      this.medias.forEach((media) => {
+        if (media && media.onResize) {
+          media.onResize({ screen, viewport });
+        }
+      });
+    }
   }
 
   /**

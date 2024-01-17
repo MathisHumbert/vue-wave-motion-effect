@@ -104,7 +104,6 @@ import { slideshowItems } from '../data/items';
   grid-area: 2 / 1 / 3 / 3;
   display: flex;
   flex-direction: row;
-  /* flex-direction: column; */
   align-self: end;
   align-items: end;
   justify-content: space-between;
@@ -126,5 +125,11 @@ import { slideshowItems } from '../data/items';
 
 .slideshow__nav__item.current {
   color: var(--color-link-hover);
+}
+
+@media screen and (max-width: 768px) {
+  .slideshow__nav {
+    flex-direction: column;
+  }
 }
 </style>
