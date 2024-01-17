@@ -1,0 +1,44 @@
+:root {
+  font-size: 14px;
+  --color-text: #424242;
+  --color-bg: #190e17;
+  --color-link: #999;
+  --color-link-hover: #fff;
+  --color-primary: #88e7c4;
+  --color-secondary: #c5517d;
+  --color-description: #3b343a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: pragmatica-extended, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
+  outline: none;
+}
