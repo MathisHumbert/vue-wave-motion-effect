@@ -3,11 +3,17 @@
     <div class="frame__title-wrap">
       <h1 class="frame__title">Wave Motion Effect</h1>
       <div class="frame__links">
-        <a href="https://r3f-infinite-circular-gallery-codrops.vercel.app/"
+        <a
+          href="https://r3f-infinite-circular-gallery-codrops.vercel.app/"
+          target="_blank"
           >Previous demo</a
         >
-        <a href="https://tympanus.net/codrops/?p=48418">Article</a>
-        <a href="https://github.com/MathisHumbert/vue-wave-motion-effect"
+        <a href="https://tympanus.net/codrops/?p=48418" target="_blank"
+          >Article</a
+        >
+        <a
+          href="https://github.com/MathisHumbert/vue-wave-motion-effect"
+          target="_blank"
           >GitHub</a
         >
       </div>
